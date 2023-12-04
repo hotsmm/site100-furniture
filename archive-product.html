@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<!-- Style CSS -->
+		<link href="css/theme.css" rel="stylesheet">
+
+		<title>Каталог готовых кухонь «Унистайл»</title>
+	</head>
+	<body>
+		
+		
+		<nav class="navbar navbar-expand-xl navbar-light bg-light d-none d-lg-block py-0" style="border-bottom: 1px solid #d7d7d7">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+						<li class="nav-item me-3">
+							<a class="nav-link"><img src="img/ico/location.png" class="me-2">Санкт-Петербург</a>
+						</li>
+						<li class="nav-item me-3">
+							<div class="row align-items-center">
+								<div class="col-2">
+									<img src="img/ico/clock-ico.png" style="position: relative; right: -5px;">
+								</div>
+								<div class="col-10">
+									<span class="nav-link">Ежедневно<br>с 9:00 до 20:00</span>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#measurerModal">
+								<div class="row align-items-center">
+									<div class="col-2">
+										<img src="img/ico/vyzov-na-zamer-ico.png" style="position: relative; left: 5px;">
+									</div>
+									<div class="col-10" id="vyzov-na-zamer-top-menu-line-height">
+										<span >Бесплатный вызвов<br>замерщика</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#callbackModal"><img src="img/ico/callback-ico.png" class="me-2">Обратный звонок</a>
+						</li>
+						<li class="nav-item me-3">
+							<a id="top-menu-tel" class="nav-link" href="#"><img src="img/ico/mobail-phone-ico.png" class="me-2">8 (911) 236-51-02</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/telegram-ico.png"></a>
+						</li>
+						<!--li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/inst-ico.png"></a>
+						</>
+						<li class="nav-item">
+							<a class="nav-link ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+						</li-->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<nav id="top-menu-2" class="navbar navbar-expand-xl navbar-light bg-white shadow py-2">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="img/ico/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Главная</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="archive-product-cat.html">Продукция</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="for-clients.html">Для клиентов</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="actions.html">Акции</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about-us.html">О нас</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html">Наши работы</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts-scroll-point">Контакты</a>
+						</li>
+						<!-- Mobile menu -->
+						<li class="nav-item d-xl-none">
+							<a class="nav-link active" href="#">Бесплатный возов замерщика</a>
+						</li>
+						<li class="nav-item d-xl-none mb-2">
+							<a id="top-menu-tel" class="nav-link" href="#">8 (911) 236-51-02</a>
+						</li>
+						<li class="nav-item d-xl-none">
+							<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+							<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.png"></a>
+							<!--a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+							<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a-->
+						</li>
+						<!-- End mobile menu -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		
+		<!-- Header -->
+		<header id="header-catalogy">
+			<div class="container">
+				<div class="row align-items-center text-start" style="min-height: 410px;">
+					<div class="col py-5">
+						<h1 class="mb-3">Каталог готовых кухонь</h1>
+						<h2 class="mb-4 mb-md-5 header-sub-title">Все готовые кухни</h2>
+						<!--p class="home-description mb-0">Собственное производство в Санкт-Петербурге жалюзи и рулонных штор, готовых и на заказ от 540 руб./м2. Оформляем окна любого размера и конфигурации. Бесплатный выезд замерщика с образцами. Срок изготовления и доставки от 2 до 5 дней. Гарантия 2 года. Европейская фурнитура.</p-->
+						<!--button type="button" class="btn btn-lg btn-orange mt-4">Вызвать замерщика</button-->
+						<!-- Home advantages -->
+						<div class="row pb-2">
+							<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
+								<div class="row align-items-center">
+									<div class="col-2 col-md-3">
+										<img src="img/ico/arounded-advantage-3.png">
+									</div>
+									<div class="col-10 col-md-9">
+										<h3 class="text-light mb-0">Собственное производство</h3>
+										<p class="text-light mb-0">Сроком от 5 дней</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
+								<div class="row align-items-center">
+									<div class="col-2 col-md-3">
+										<img src="img/ico/arounded-advantage-2.png">
+									</div>
+									<div class="col-10 col-md-9">
+										<h3 class="text-light mb-0">Рассрочка 0%</h3>
+										<p class="text-light mb-0">До 12 месяцев</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-2 mb-md-0">
+								<div class="row align-items-center">
+									<div class="col-2 col-md-3">
+										<img src="img/ico/arounded-advantage-1.png">
+									</div>
+									<div class="col-10 col-md-9">
+										<h3 class="text-light mb-0">Бесплатный замер</h3>
+										<p class="text-light mb-0">С образцами материалов</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-md-0">
+								<div class="row align-items-center">
+									<div class="col-2 col-md-3">
+										<img src="img/ico/arounded-advantage-4.png">
+									</div>
+									<div class="col-10 col-md-9">
+										<h3 class="text-light mb-0">Монтаж с гарантией</h3>
+										<p class="text-light mb-0">2 года!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Home advantages -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /Header -->
+		
+		
+		<!-- Archive product cat -->
+		<section class="pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="breadcrumbs py-4">
+							<a href="index.html"><img src="img/ico/home-breadcrumbs.png"></a> / <a href="archive-product-cat.html" style="text-decoration: none;">Продукция</a> /  <a href="archive-kitchen-cat.html" style="text-decoration: none;">Кухни</a> / Готовые кухни
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Наша продукция</h2>
+						<div class="title-line mb-3 mb-md-4"></div>
+						<div class="nav-scroller mb-0 mb-md-4" id="navbarSupportedContent2">
+							<ul class="nav justify-content-md-center d-flex m-auto">
+								<li class="nav-item">
+									<a class="nav-link active ps-0" aria-current="page" href="archive-product.html">Все кухни</a>
+								</li>
+								<li class="nav-item d-none d-xl-inline">
+									<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="archive-product.html">Прямые</a>
+								</li>
+								<li class="nav-item d-none d-xl-inline">
+									<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="archive-product.html">Угловые</a>
+								</li>
+								<li class="nav-item d-none d-xl-inline">
+									<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="archive-product.html">П-образные</a>
+								</li>
+								<li class="nav-item d-none d-xl-inline">
+									<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="archive-product.html">С барной стойкой</a>
+								</li>
+								<li class="nav-item d-none d-xl-inline">
+									<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link pe-0" href="archive-product.html">С островком</a>
+								</li>
+							</ul>
+						</div>
+						<div class="d-md-none text-center mb-4">
+							<img src="img/ico/left-right-finger.png" style="opacity: 1; max-width: 25px;">
+						</div>
+						<div class="row mb-2">
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-1.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 1</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 41 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-2.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 2</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 31 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-3.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 3</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 15 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-1.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 4</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 41 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-2.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 5</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 31 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-3.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 6</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 15 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-1.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 7</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 41 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-2.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 8</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 31 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-3.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 9</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 15 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-1.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 10</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 41 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-2.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 11</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 31 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-5 project-entry">
+								<a href="single-product.html">
+									<div class="figure rounded shadow">
+										<img src="img/product-cat-3.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Кухня 12</h3>
+								<div class="row align-items-center">
+									<div class="col mb-3 mb-lg-0">
+										<span class="price">от 15 500 руб</span>
+									</div>
+									<div class="col text-lg-end">
+										<button type="button" class="btn btn-orange" style="width: 175px;">Подробнее</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-center text-corporate-1">
+								<li class="page-item"><a class="page-link" href="#">←</a></li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">...</a></li>
+								<li class="page-item"><a class="page-link" href="#">10</a></li>
+								<li class="page-item"><a class="page-link" href="#">11</a></li>
+								<li class="page-item"><a class="page-link" href="#">12</a></li>
+								<li class="page-item"><a class="page-link" href="#">→</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Archive product cat -->
+		
+		
+		<!-- What we will do --
+		<section class="bg-light py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Что мы для Вас сделаем</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row">
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2">
+										<img src="img/ico/measurement.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Бесплатно произведем замер и подбор материалов</h3>
+										<p class="mb-0">Замерщик приедет в удобное для Вас время со всеми каталогами и образцами материалов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2">
+										<img src="img/ico/measurement.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Бесплатно произведем замер и подбор материалов</h3>
+										<p class="mb-0">Замерщик приедет в удобное для Вас время со всеми каталогами и образцами материалов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5 mb-md-0">
+								<div class="row">
+									<div class="col-2">
+										<img src="img/ico/measurement.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Бесплатно произведем замер и подбор материалов</h3>
+										<p class="mb-0">Замерщик приедет в удобное для Вас время со всеми каталогами и образцами материалов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-0">
+								<div class="row">
+									<div class="col-2">
+										<img src="img/ico/measurement.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Бесплатно произведем замер и подбор материалов</h3>
+										<p class="mb-0">Замерщик приедет в удобное для Вас время со всеми каталогами и образцами материалов.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /What we will do -->
+		
+		
+		<!-- Advantages -->
+		<section class="advantages bg-light py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Преимущества покупки мебели у нас</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row">
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-1.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Собственное производство</h3>
+										<p class="mb-0">Приобретайте напрямую у производителя с опытом работы более 8 лет, без переплаты посредникам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-9.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Бесплатный замер</h3>
+										<p class="mb-0">Бесплатный замер в Санкт-Петербурге и Лен. области, без выходных с 9:00 до 20:00, с каталогами материалов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-3.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Максимальная гарантия в России</h3>
+										<p class="mb-0">Мы даем 2 года гарантии.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-8.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Доставляем и устанавливаем</h3>
+										<p class="mb-0">Установка "под ключ". Самовывоз (Санкт-Петербург). Доставка по России.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-5.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Рассрочка 0%</h3>
+										<p class="mb-0">Благодаря собственному производству предлагаем беспроцентную рассрочку на 12 месяцев.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-6.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Удобная оплата</h3>
+										<ul class="mb-0 text-orange ps-0" style="">
+											<li style="line-height: 24px;"><img src="img/ico/menu-point.png" class="me-2">Банковской картой на замере (по банковскому терминалу)</li>
+											<li style="line-height: 24px;"><img src="img/ico/menu-point.png" class="me-2">Наличными </li>
+											<li style="line-height: 24px;"><img src="img/ico/menu-point.png" class="me-2">Онлайн</li>
+											<li style="line-height: 24px;"><img src="img/ico/menu-point.png" class="me-2">Безналичный расчет</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5 mb-md-0">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-7.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Большой выбор готовой продукции и материалов</h3>
+										<p class="mb-0">Более 900 готовых изделий, декоров и фасадов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-0">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-10.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Регулярные акции и подарки</h3>
+										<p class="mb-0">Регулярно проводим акции, делаем существенные скидки, дарим подарки.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Advantages -->
+		
+		
+		<!-- Process -->
+		<section class="advantages bg-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Как купить</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row justify-content-around">
+							<div class="col-md-2 mb-5">
+								<div class="row">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-1.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/1.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Заявка</h3>
+										<p class="mb-0">Оставьте заявку на замер на нашем сайте или позвоните нам по телефону.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 mb-5">
+								<div class="row">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-2.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/2.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Замер</h3>
+										<p class="mb-0">Замерщик приедет в удобное для Вас время со всеми каталогами и образцами.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 mb-5">
+								<div class="row">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-3.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/3.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Производство</h3>
+										<p class="mb-0">Вы подтверждаете свой выбор и вносите предоплату, заказ поступает в производство.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 mb-5">
+								<div class="row">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-4.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/4.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Установка</h3>
+										<p class="mb-0">После изготовления, монтажник доставит и установит Ваш заказ.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Process -->
+		
+		
+		<!-- Frequent questions -->
+		<section class="advantages bg-light py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<h2 class="text-center mb-3">Вопросы и ответы</h2>
+						<div class="title-line mb-5"></div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h3 class="accordion-header" id="heading-1">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+										Какие жалюзи подходят для первых этажей?
+									</button>
+								</h3>
+								<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										Рулонные шторы с пружинным механизмом и шторы плиссе поднимаются снизу вверх, то есть Вы можете их слегка приоткрыть, оставаясь невидимыми для взглядов с улицы. Кроме того, механизм «наоборот» выглядит очень необычно и современно.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-2">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+										Есть ли готовые изделия?
+									</button>
+								</h2>
+								<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										Рулонные шторы с пружинным механизмом и шторы плиссе поднимаются снизу вверх, то есть Вы можете их слегка приоткрыть, оставаясь невидимыми для взглядов с улицы. Кроме того, механизм «наоборот» выглядит очень необычно и современно.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="heading-3">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+										Можно ли стирать жалюзи / рулонные шторы, как ухаживать?
+									</button>
+								</h2>
+								<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										Рулонные шторы с пружинным механизмом и шторы плиссе поднимаются снизу вверх, то есть Вы можете их слегка приоткрыть, оставаясь невидимыми для взглядов с улицы. Кроме того, механизм «наоборот» выглядит очень необычно и современно.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Frequent questions -->
+		
+		
+		<!-- Order -->
+		<section class="bg-white order-section">
+			<div class="container">
+				<div class="row">
+					<div class="d-none d-md-block col-md-6" style="position: relative;">
+						<img src="img/ico/men.png">
+					</div>
+					<div class="col-md-6">
+						<h2>Остались вопросы?</h2>
+						<p style="max-width: 570px;">Хотите, мы свяжемся с вами в течение 10 минут и все подробно расскажем?</p>
+						<div class="title-line mb-5" style="margin: unset;"></div>
+						<form method="post" action="">
+							<div class="row">
+								<div class="col-md-4">
+									<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
+									<input type="text" class="form-control" id="exampleFormControlInput1">
+								</div>
+								<div class="col-md-4">
+									<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
+									<input type="text" class="form-control telMask" id="exampleFormControlInput2">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<button type="button" class="btn btn-orange mt-3">Хорошо, жду звонка</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Order -->
+		
+		
+		<!-- Contacts -->
+		<div id="contacts-scroll-point" class="scroll-point"></div>
+		<section class="contacts-section-3">
+			<div class="container py-5">
+				<div class="row align-items-center">
+					<div class="col py-3">
+						<nav class="footer-menu navbar navbar-expand-lg navbar-dark">
+							<a class="navbar-brand" href="https://unistyle-spb.ru">
+								<img src="img/ico/logo-light.png">
+							</a>
+							<div class="collapse navbar-collapse d-none d-lg-block">
+								<ul id="navbarSupportedContent3" class="navbar-nav ms-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" href="index.html">Главная</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="archive-product-cat.html">Продукция</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="for-clients.html">Для клиентов</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="actions.html">Акции</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">О нас</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="portfolio.html">Наши работы</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contacts-scroll-point">Контакты</a>
+									</li>
+									<!-- Mobile menu -->
+									<li class="nav-item d-xl-none">
+										<a class="nav-link active" href="#">Бесплатный возов замерщика</a>
+									</li>
+									<li class="nav-item d-xl-none mb-2">
+										<a id="top-menu-tel" class="nav-link" href="#">8 (911) 236-51-02</a>
+									</li>
+									<li class="nav-item d-xl-none">
+										<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+										<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.png"></a>
+										<!--a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+										<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a-->
+									</li>
+									<!-- End mobile menu -->
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="row pt-3">
+					<div class="col-sm-8 col-lg-4">
+						<ul>
+							<li class="mb-3 text-light">
+								<a href="https://unistyle-spb.ru/контакты/" class="text-light text-decoration-none">
+									<div class="contacts-li-float-left text-center">
+										<img src="img/ico/location.png">
+									</div>
+									<div class="contacts-li-float-right">
+										Санкт-Петербург, 16-я линия В.О. д 7
+									</div>
+									<div style="clear: both;"></div>
+								</a>
+							</li>
+							
+							<li class="mb-3 text-light">
+								<div class="contacts-li-float-left text-center">
+									<img src="img/ico/clock-ico.png">
+								</div>
+								<div class="contacts-li-float-right">
+									<span>Оператор: с 9:00 до 21:00 (ежедневно)<br>Офис: с 9:00 до 18:00 (Пн-Пт)</span>
+								</div>
+								<div style="clear: both;"></div>
+							</li>
+							
+							<li class="mb-3">
+								<a href="tel:+78123362246" class="text-light text-decoration-none">
+									<div class="contacts-li-float-left text-center">
+										<img src="img/ico/mobail-phone-ico.png">
+									</div>
+									<div class="contacts-li-float-right">
+										+7 (812) 336-22-46
+									</div>
+									<div style="clear: both;"></div>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info@unistyle-spb.ru" class="text-light text-decoration-none">
+									<div class="contacts-li-float-left text-center">
+										<img src="img/ico/email-ico.png">
+									</div>
+									<div class="contacts-li-float-right">	
+										info@unistyle-spb.ru
+									</div>
+									<div style="clear: both;"></div>
+								</a>
+							</li>
+						</ul>
+						<div class="row justify-content-center">
+							<div class="col pt-3">
+								<a class="ico-button pe-2" href="whatsapp://send?phone=+79632425462"><img src="img/ico/whatsapp-ico.png"></a>
+								<a class="ico-button pe-2" href="tg://resolve?domain=right_kate"><img src="img/ico/telegram-ico.png"></a>
+								<!--a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+								<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a-->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 pt-5 pt-lg-2">
+						<div class="row justify-content-end">
+							<div class="col-md-4 col-lg-3">
+								<button type="button" class="btn btn-orange mb-3 w-100 ps-1 pe-1" data-bs-toggle="modal" data-bs-target="#measurerModal">Вызвать замерщика</button>
+							</div>
+							<div class="col-md-4 col-lg-3">
+								<button type="button" class="btn btn-orange mb-3 w-100" data-bs-toggle="modal" data-bs-target="#callbackModal">Обратный звонок</button>
+							</div>
+							<div class="col-md-4 col-lg-3">
+								<button type="button" class="btn btn-orange mb-3 w-100" data-bs-toggle="modal" data-bs-target="#messageModal">Задать вопрос</button>
+							</div>
+						</div>
+						<div class="row d-lg-none justify-content-center pt-3">
+							<div class="col-6 left-col-footer-menu">
+								<ul id="navbarSupportedContent3" class="navbar-nav ms-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link active" href="index.html">Главная</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="archive-product-cat.html">Продукция</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="for-clients.html">Для клиентов</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="actions.html">Акции</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-6 right-col-footer-menu">
+								<ul id="navbarSupportedContent3" class="navbar-nav ms-auto mb-2 mb-lg-0">
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about-us.html">О нас</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="portfolio.html">Наши работы</a>
+									</li>
+									<li class="nav-item d-none d-xl-inline">
+										<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contacts-scroll-point">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row justify-content-end text-lg-end pt-3 pt-lg-5">
+							<div class="col-lg-4 mb-4 mb-lg-0">
+								<p class="mb-1 text-light" style="font-size: 16px;">Рейтинг организации в Яндексе:</p>
+								<iframe src="https://yandex.ru/sprav/widget/rating-badge/191559302708" width="150" height="50" frameborder="0" style="border-radius: 7px;"></iframe>
+							</div>
+							<div class="col-lg-4 mb-4 mb-lg-0">
+								<p class="mb-1 text-light" style="font-size: 16px;">У нас можно заказать в рассрочку:</p>
+								<img src="img/ico/tinkoff-rassrochka.png" class="img-fluid">
+							</div>
+							<div class="col-lg-4">
+								<p class="mb-1 text-light" style="font-size: 16px;">Принимаем к оплате:</p>
+								<img src="img/ico/credit-card.png" class="img-fluid" style="height: 50px;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div id="company-in-footer" class="py-1">©2023 «Унистайл» - производство и продажа корпусной мебели.</div>
+							<!--div id="im-in-footer">Создание и продвижение сайтов: <a href="https://сайт100.рф" class="text-light">сайт100.рф</a></div-->
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!-- /Contacts -->
+		
+		
+		<!-- Callback Modal -->
+		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<p><small>Мы свяжемся с Вами в удобное для Вас время и ответим на все вопросы! Для звонка введите Ваше имя и телефон.</small></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mb-3 mb-md-0">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Перезвонить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Callback Modal -->
+		
+		
+		<!-- Measurer Modal -->
+		<div class="modal fade" id="measurerModal" tabindex="-1" aria-labelledby="measurerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="measurerModalLabel">Вызов замерщика (бесплатно)</h5>
+						
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">
+								<p><small>Наш специалист приедет в удобное для Вас время, произведет замеры, ознакомит с продукцией и материалами, проконсультирует по всем вопросам! Для связи с замерщиком введите Ваше имя и телефон.</small></p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон*">
+							</div>
+							<div class="col-12 mb-3">
+								<input type="text" name="tel" class="form-control" placeholder="Адрес объекта*">
+							</div>
+							<div class="col-12 mb-3">
+								<textarea type="text" name="mes" class="form-control" placeholder="Дополнительная информация"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<p class="mb-0">
+									<img src="img/ico/advantage-1.png" class="me-1" style="width: 25px;">
+									<small>Изготовление 2-5 дней!</small>
+								</p>
+							</div>
+							<div class="col-6">
+								<p class="mb-0">
+									<img src="img/ico/advantage-3.png" class="me-1" style="width: 20px;">
+									<small>Гарантия 2 года!</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Вызвать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Measurer Modall -->
+		
+		
+		<!-- Message Modal -->
+		<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="messageModalLabel">Задать вопрос</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" name="email" class="form-control" placeholder="Ваш email*">
+							</div>
+							<div class="col-12">
+								<textarea type="text" name="mes" class="form-control" placeholder="Ваш вопрос*"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Message Modal -->
+		
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		-->
+		
+		<!-- Main scripts -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Telephone number mask -->
+		<script src="js/inputmask.min.js"></script>
+		<script>
+			var telMask = document.getElementsByClassName("telMask");
+			var im = new Inputmask("+7(999)999-99-99");
+			im.mask(telMask);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<!-- Style CSS -->
+		<link href="style.css" rel="stylesheet">
+
+		<title>Цены</title>
+	</head>
+	<body>
+		
+		
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-xl navbar-light bg-light d-none d-lg-block py-0" style="border-bottom: 1px solid #d7d7d7">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+						<li class="nav-item me-3">
+							<a class="nav-link"><img src="img/ico/location.png" class="me-2">Санкт-Петербург</a>
+						</li>
+						<li class="nav-item me-3">
+							<div class="row align-items-center">
+								<div class="col-2">
+									<img src="img/ico/clock-ico.png" style="position: relative; right: -5px;">
+								</div>
+								<div class="col-10">
+									<span class="nav-link">Ежедневно<br>с 9:00 до 20:00</span>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#measurerModal">
+								<div class="row align-items-center">
+									<div class="col-2">
+										<img src="img/ico/vyzov-na-zamer-ico.png" style="position: relative; left: 5px;">
+									</div>
+									<div class="col-10" id="vyzov-na-zamer-top-menu-line-height">
+										<span >Бесплатный вызвов<br>замерщика</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#callbackModal"><img src="img/ico/callback-ico.png" class="me-2">Обратный звонок</a>
+						</li>
+						<li class="nav-item me-3">
+							<a id="top-menu-tel" class="nav-link" href="#"><img src="img/ico/telephone-ico.png" class="me-2">8 (911) 236-51-02</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/telegram-ico.png"></a>
+						</li>
+						<!--
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/inst-ico.png"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<nav id="top-menu-2" class="navbar navbar-expand-xl navbar-light bg-white py-3">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="img/ico/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Главная</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="catalogy.html">Каталог</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html">Наши работы</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="prices.html">Цены</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="actions.html">Акции</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="materials.html">Материалы</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="delivery.html">Услуги</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">О нас</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts-scroll-point">Контакты</a>
+						</li>
+						<!-- Mobile menu -->
+						<li class="nav-item d-xl-none">
+							<a class="nav-link active" href="#">Бесплатный возов замерщика</a>
+						</li>
+						<li class="nav-item d-xl-none">
+							<a id="top-menu-tel" class="nav-link" href="#">8 (911) 236-51-02</a>
+						</li>
+						<li class="nav-item d-xl-none">
+							<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+							<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.png"></a>
+							<a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+							<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+						</li>
+						<!-- End mobile menu -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End menu -->
+		
+		
+		<!-- Header -->
+		<header id="header-catalogy">
+			<div class="container">
+				<div class="row align-items-center text-start">
+					<div class="col-lg-10 py-5">
+						<h1 class="mb-3">Материалы</h1>
+						<p class="home-description mb-0">Собственное производство в Санкт-Петербурге жалюзи и рулонных штор, готовых и на заказ от 540 руб./м2. Оформляем окна любого размера и конфигурации. Бесплатный выезд замерщика с образцами. Срок изготовления и доставки от 2 до 5 дней. Гарантия 2 года. Европейская фурнитура.</p>
+						<button type="button" class="btn btn-lg btn-orange mt-4">Вызвать замерщика</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /Header -->
+		
+		
+		<!-- Products -->
+		<section class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Материалы</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row">
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-1.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Рулонные ткани</h3>
+							</div>
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-2.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Рулонные ткани “Зебра”</h3>
+							</div>
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-3.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Рулонный бамбук</h3>
+							</div>
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-4.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Вертикальные ткани</h3>
+							</div>
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-5.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Вертикальный пластик</h3>
+							</div>
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-6.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Вертикальный алюминий</h3>
+							</div>
+							<div class="col-md-3 mb-5 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-7.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Вертикальный ткани “Бриз”</h3>
+							</div>
+							<div class="col-md-3 mb-5 mb-md-0 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-8.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Горизонтальный алюминий</h3>
+							</div>
+							<div class="col-md-3 mb-5 mb-md-0 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-9.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Дерево и бамбук</h3>
+							</div>
+							<div class="col-md-3 mb-5 mb-md-0 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-10.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Ткани “Плиссе”</h3>
+							</div>
+							<div class="col-md-3 project-entry">
+								<a href="materials.html">
+									<div class="figure rounded shadow">
+										<img src="img/material-cat-11.jpg" class="img-fluid">
+									</div>
+								</a>
+								<h3 class="mb-3">Ткани “Мираж”</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Products -->
+		
+		
+		<!-- Portfolio --
+		<section class="bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-10 py-5">
+						<h2 class="text-center mb-3">Примеры наших работ</h2>
+						<div class="title-line mb-5"></div>
+						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							</div>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="img/portfolio-1.jpg" class="d-block w-100 rounded" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/portfolio-1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/portfolio-1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/portfolio-1.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="img/portfolio-1.jpg" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+								<img src="img/ico/arrow-left.png">
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+								<img src="img/ico/arrow-right.png">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Portfolio -->
+		
+		
+		<!-- What we will do --
+		<section class="advantages bg-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Преимущества работы с нами</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row">
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-1.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Свое производство</h3>
+										<p class="mb-0">Работайте напрямую с производителем без переплаты посредникам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-2.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Европейское качество</h3>
+										<p class="mb-0">Все ткани имеют сертификаты качества и экологической безопасности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-3.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Европейское качество</h3>
+										<p class="mb-0">Все ткани имеют сертификаты качества и экологической безопасности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-4.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Европейское качество</h3>
+										<p class="mb-0">Все ткани имеют сертификаты качества и экологической безопасности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-5.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Честные цены</h3>
+										<p class="mb-0">Благодаря собственному производству предлагаем честные цены на продукцию.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-6.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Удобная оплата</h3>
+										<ul class="mb-0 text-orange">
+											<li><img src="img/ico/menu-point.png" class="me-2">Банковской картой (по банковскому терминалу)</li>
+											<li><img src="img/ico/menu-point.png" class="me-2">Наличными </li>
+											<li><img src="img/ico/menu-point.png" class="me-2">Онлайн</li>
+											<li><img src="img/ico/menu-point.png" class="me-2">Безналичный расчет</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5 mb-md-0">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-7.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Большой выбор готовой продукции и материалов</h3>
+										<p class="mb-0">Более 35 видов жалюзи и штор, а также выбор из более чем 1600 материалов, безопасных для здоровья взрослых и детей.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-0">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-8.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Мобильный офис</h3>
+										<p class="mb-0">Замер с каталогами в Санкт-Петербурге и Лен. области, без выходных с 9:00 до 21:00.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /What we will do -->
+		
+		
+		<!-- Process --
+		<section class="advantages bg-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Как мы работаем</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row justify-content-around">
+							<div class="col-md-2 mb-5">
+								<div class="row align-items-center">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-1.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/1.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Заявка</h3>
+										<p class="mb-0">Оставьте заявку на замер на нашем сайте или позвоните нам по телефону.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 mb-5">
+								<div class="row align-items-center">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-2.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/2.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Замер</h3>
+										<p class="mb-0">Замерщик приедет в удобное для Вас время со всеми каталогами и образцами.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 mb-5">
+								<div class="row align-items-center">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-3.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/3.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Производство</h3>
+										<p class="mb-0">Вы подтверждаете свой выбор и вносите предоплату, заказ поступает в производство.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2 mb-5">
+								<div class="row align-items-center">
+									<div class="col-6 text-center">
+										<img src="img/ico/process-4.png" class="img-fluid">
+									</div>
+									<div class="col-6">
+										<img src="img/ico/4.png" class="img-fluid">
+									</div>
+								</div>
+								<div class="row pt-3">
+									<div class="col">
+										<h3>Установка</h3>
+										<p class="mb-0">После изготовления, монтажник доставит и установит Ваш заказ.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Process -->
+		
+		
+		<!-- Order -->
+		<section class="bg-light order-section">
+			<div class="container">
+				<div class="row">
+					<div class="d-none d-md-block col-md-6" style="position: relative;">
+						<img src="img/ico/men.png">
+					</div>
+					<div class="col-md-6">
+						<h2 class="mb-3">Здравствуйте! Хотите, мы свяжемся с вами в ближайшее время и все подробно расскажем?</h2>
+						<form method="post" action="">
+							<div class="row">
+								<div class="col-md-4">
+									<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
+									<input type="text" class="form-control" id="exampleFormControlInput1">
+								</div>
+								<div class="col-md-4">
+									<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
+									<input type="text" class="form-control telMask" id="exampleFormControlInput2">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<button type="button" class="btn btn-orange mt-3">Хорошо, жду звонка</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Order -->
+		
+		
+		<!-- Contacts -->
+		<div id="contacts-scroll-point" class="scroll-point"></div>
+		<section class="contacts-section">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center text-light mb-3">Контакты</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row justify-content-center">
+							<div class="col-md-5 col-lg-3">
+								<ul>
+									<li class="mb-3"><img src="img/ico/logo-light.png"></li>
+									<li class="mb-3"><img src="img/ico/location.png" class="ms-1 me-2">Санкт-Петербург</li>
+									<li class="mb-3"><img src="img/ico/clock-ico.png" class="me-2 ">Ежедневно: с 9:00 до 20:00</li>
+									<li><a href="#" class="text-light text-decoration-none"><img src="img/ico/telephone-ico.png" class="me-2">8 (911) 236-51-02</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 col-lg-3">
+								<ul>
+									<li><a href="#" class="text-light text-decoration-none">Главная</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Каталог</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Акции</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Цены</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 col-lg-3">
+								<ul>
+									<li><a href="#" class="text-light text-decoration-none">Материалы</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Доставка и монтаж</a></li>
+									<li><a href="#" class="text-light text-decoration-none">О компании</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row justify-content-center text-center">
+							<div class="col-md-4 col-lg-2">
+								<button type="button" class="btn btn-orange mt-3 w-100 ps-1 pe-1" data-bs-toggle="modal" data-bs-target="#measurerModal">Вызвать замерщика</button>
+							</div>
+							<div class="col-md-4 col-lg-2">
+								<button type="button" class="btn btn-orange mt-3 w-100" data-bs-toggle="modal" data-bs-target="#callbackModal">Обратный звонок</button>
+							</div>
+							<div class="col-md-4 col-lg-2">
+								<button type="button" class="btn btn-orange mt-3 w-100" data-bs-toggle="modal" data-bs-target="#messageModal">Задать вопрос</button>
+							</div>
+						</div>
+						<div class="row justify-content-center text-center">
+							<div class="col pt-4">
+								<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+								<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.png"></a>
+								<a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+								<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div id="company-in-footer">©2022 Унистайл</div>
+							<div id="im-in-footer">Создание и продвижение сайтов: <a href="https://сайт100.рф" class="text-light">сайт100.рф</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!-- /Contacts -->
+		
+		
+		<!-- Callback Modal -->
+		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3 mb-md-0">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Перезвонить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Callback Modal -->
+		
+		
+		<!-- Measurer Modal -->
+		<div class="modal fade" id="measurerModal" tabindex="-1" aria-labelledby="measurerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="measurerModalLabel">Вызов замерщика</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон">
+							</div>
+							<div class="col-12 mb-3">
+								<input type="text" name="tel" class="form-control" placeholder="Адрес объекта">
+							</div>
+							<div class="col-12">
+								<textarea type="text" name="mes" class="form-control" placeholder="Дополнительная информация"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Вызвать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Measurer Modall -->
+		
+		
+		<!-- Message Modal -->
+		<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="messageModalLabel">Задать вопрос</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон">
+							</div>
+							<div class="col-12 mb-3">
+								<input type="text" name="adress" class="form-control" placeholder="Адрес объекта">
+							</div>
+							<div class="col-12">
+								<textarea type="text" name="mes" class="form-control" placeholder="Дополнительная информация"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Message Modal -->
+		
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		-->
+		
+		<!-- Main scripts -->
+		<script src="scripts/scripts.js"></script>
+		
+		<!-- Telephone number mask -->
+		<script src="scripts/inputmask.min.js"></script>
+		<script>
+			var telMask = document.getElementsByClassName("telMask");
+			var im = new Inputmask("+7(999)999-99-99");
+			im.mask(telMask);
+		</script>
+	</body>
+</html>

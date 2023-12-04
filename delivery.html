@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		
+		<!-- Style CSS -->
+		<link href="style.css" rel="stylesheet">
+
+		<title>Услуги "Унистайл": вызов замерщика, доставка, монтаж.</title>
+	</head>
+	<body>
+		
+		
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-xl navbar-light bg-light d-none d-lg-block py-0" style="border-bottom: 1px solid #d7d7d7">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+						<li class="nav-item me-3">
+							<a class="nav-link"><img src="img/ico/location.png" class="me-2">Санкт-Петербург</a>
+						</li>
+						<li class="nav-item me-3">
+							<div class="row align-items-center">
+								<div class="col-2">
+									<img src="img/ico/clock-ico.png" style="position: relative; right: -5px;">
+								</div>
+								<div class="col-10">
+									<span class="nav-link">Ежедневно<br>с 9:00 до 20:00</span>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#measurerModal">
+								<div class="row align-items-center">
+									<div class="col-2">
+										<img src="img/ico/vyzov-na-zamer-ico.png" style="position: relative; left: 5px;">
+									</div>
+									<div class="col-10" id="vyzov-na-zamer-top-menu-line-height">
+										<span >Бесплатный вызвов<br>замерщика</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#callbackModal"><img src="img/ico/callback-ico.png" class="me-2">Обратный звонок</a>
+						</li>
+						<li class="nav-item me-3">
+							<a id="top-menu-tel" class="nav-link" href="#"><img src="img/ico/telephone-ico.png" class="me-2">8 (911) 236-51-02</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/telegram-ico.png"></a>
+						</li>
+						<!--
+						<li class="nav-item">
+							<a class="nav-link ico-button pe-0" href="#"><img src="img/ico/inst-ico.png"></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<nav id="top-menu-2" class="navbar navbar-expand-xl navbar-light bg-white py-3">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="img/ico/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Главная</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="catalogy.html">Каталог</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html">Наши работы</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="prices.html">Цены</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="actions.html">Акции</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="materials.html">Материалы</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="delivery.html">Услуги</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">О нас</a>
+						</li>
+						<li class="nav-item d-none d-xl-inline">
+							<span class="nav-link px-1"><img src="img/ico/menu-point.png"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts-scroll-point">Контакты</a>
+						</li>
+						<!-- Mobile menu -->
+						<li class="nav-item d-xl-none">
+							<a class="nav-link active" href="#">Бесплатный возов замерщика</a>
+						</li>
+						<li class="nav-item d-xl-none">
+							<a id="top-menu-tel" class="nav-link" href="#">8 (911) 236-51-02</a>
+						</li>
+						<li class="nav-item d-xl-none">
+							<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+							<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.png"></a>
+							<a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+							<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+						</li>
+						<!-- End mobile menu -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End menu -->
+		
+		
+		<!-- Header -->
+		<header id="services-header">
+			<div class="container">
+				<div class="row align-items-center text-start">
+					<div class="col-lg-11 py-5">
+						<h1 class="mb-3">Услуги "Унистайл"</h1>
+						<h2 class="mb-3">Вызов замерщика, доставка, монтаж</h2>
+						<p class="home-description mb-0">Компания Унистайл предоставляет полный спектр услуг: выезд замерщика жалюзи в СПб и Ленинградскую область, предоставление профессиональной консультации, собственный цех с современным оборудованием, доставка по городу и области, быстрый и качественный монтаж с гарантией на 2 года.</p>
+						<button type="button" class="btn btn-lg btn-orange mt-4">Вызвать замерщика</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- /Header -->
+		
+		
+		<!-- Actions -->
+		<section class="delivery-section py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						
+						<h2 class="text-center mb-3">Консультирование</h2>
+						<div class="title-line mb-5"></div>
+						<p class="mb-5">Для получения профессиональной консультации вы можете обратиться к нам по телефону <a href="tel:78126136956">+7 (812) 613-69-56</a> или написать на электронный адрес <a href="mailto:inbox@alufit.ru">inbox@alufit.ru</a>. Также можно задать все вопросы специалисту-замерщику, который приедет к вам по адресу, чтобы снять мерки с окон. Мастер грамотно сориентирует вас по материалам, подскажет степень светозащиты каждого типа изделия, поможет выбрать оптимальный способ монтажа и сделает расчёт стоимости конструкции.</p>
+						
+						<!--
+						<h2 class="text-center mb-3">Цены на доставку и монтаж</h2>
+						<div class="title-line mb-5"></div>
+						<table class="table mb-5">
+							<tbody>
+								<tr class="thead">
+									<td></td>
+									<td>Замер</td>
+									<td>Доставка</td>
+									<td>Монтаж (1 изделие)</td>
+								</tr>
+								<tr>
+									<td>СПб</td>
+									<td>Бесплатно</td>
+									<td>500 руб</td>
+									<td rowspan="2">500 руб</td>
+								</tr>
+								<tr>
+									<td rowspan="4">Пригороды</td>
+									<td>500 ₽ (до 20 км. от границы города)</td>
+									<td>850 ₽ (до 20 км. от границы города)</td>
+								</tr>
+								<tr>
+									<td>Свыше 20 км.:</td>
+									<td>Свыше 20 км.:</td>
+									<td>Наценка за высотный монтаж</td>
+								</tr>
+								<tr>
+									<td>850 ₽ + 20 ₽/км (начиная с 21-го)</td>
+									<td>850 ₽ + 20 ₽/км (начиная с 21-го)</td>
+									<td>500 руб</td>
+								</tr>
+								<tr>
+									<td colspan="2">кроме: Рыбацкое, Кудрово, Колпино, Пушкин, Павловск, Красное село, Девяткино</td>
+									<td>(при установке крепежа выше 400 см. от пола)</td>
+								</tr>
+							</tbody>
+						</table>
+						-->
+						
+						<h2 class="text-center mb-3">Вызов замерщика жалюзи в СПб и ЛО</h2>
+						<div class="title-line mb-5"></div>
+						<p>Чтобы жалюзи и рулонные шторы полноценно выполняли свою функцию, очень важно правильно снять мерки с окон (вплоть до миллиметра). Обратите внимание, что замер необходимо осуществлять точно в соответствии с инструкциями для конкретного вида изделия и учитывая форму оконного проёма. Именно поэтому мы советуем воспользоваться услугами нашего специалиста, который профессионально произведёт обмеривание, а также сможет проконсультировать вас по любым интересующим вопросам.</p>
+						<p>Вызвать замерщика жалюзи в СПб и ЛО:</p>
+						<ul>
+							<li><img src="img/ico/menu-point.png" class="me-2">во все районы г. Санкт-Петербурга, а так же Рыбацкое, Кудрово, Колпино, Пушкин, Павловск, Девяткино – бесплатно;</li>
+							<li><img src="img/ico/menu-point.png" class="me-2">по всей территории Ленинградской области – На специальных условиях, уточняйте у менеджеров;</li>
+							<li><img src="img/ico/menu-point.png" class="me-2">В заранее оговоренное время замерщик приедет по вашему адресу для проведения работ. Кроме этого он привезёт с собой образцы материалов, рассчитает точную стоимость заказа и оформит с вами договор. Вы также сможете оплатить нашему работнику часть суммы, оплата возможна наличными, картой или онлайн (подробнее см. в разделе Оплата).</li>
+						</ul>
+						<div class="text-center"><button type="button" class="btn btn-lg btn-orange mb-5">Вызвать замерщика</button></div>
+						
+						<h2 class="text-center mb-3">Изготовление жалюзи</h2>
+						<div class="title-line mb-5"></div>
+						<p>Обладая всеми необходимыми техническими возможностями (собственный цех с современным оборудованием), компания «Унистайл» гарантирует быстрое и точное производство жалюзи или рулонных штор под заказ. Благодаря тому, что все материалы и необходимые комплектующие всегда есть в наличии на нашем складе, сроки изготовления модели зависят от сложности дизайна, но обычно не превышают 2-5 дней с момента внесения предоплаты*.</p>
+						<p>Вы также можете сделать срочный заказ. В этом случае светозащитная система по вашим размерам будет готова в течение 1 суток (условия оговариваются в индивидуальном порядке).</p>
+						<p class="mb-5"><small>* При выборе безналичного способа расчёта изготовление изделия начинается с поступления денег на счёт – подробнее см. в разделе Оплата.</small></p>
+						
+						<h2 class="text-center mb-3">Доставка жалюзи</h2>
+						<div class="title-line mb-5"></div>
+						<p>По факту готовности заказа, представитель нашей компании созванивается с вами, чтобы определить удобные часы доставки и уточнить адрес. Согласовав эти параметры, вы избавите себя от длительного ожидания, и сможете более рационально распоряжаться своим временем. Наши сотрудники обеспечат соблюдение оговоренных сроков, а аккуратная погрузка и правильные условия транспортировки гарантируют полную сохранность конструкции.</p>
+						<p class="mb-5">Также вы можете воспользоваться услугой самовывоза и самостоятельно забрать свой заказ из нашего офиса по адресу: СПб, </p>
+						
+						<h2 class="text-center mb-3">Монтаж жалюзи</h2>
+						<div class="title-line mb-5"></div>
+						<p>С первого взгляда монтаж жалюзи и рулонных штор не представляет особой сложности. Однако, несоблюдение всех нюансов технологического процесса, о которых может знать только опытный профессионал, может привести к существенному ухудшению эксплуатационных характеристик светофильтра, а в дальнейшем и к поломке. Чтобы этого не произошло – доверьте монтаж жалюзи специалисту, который быстро и качественно «оденет» ваши окна самым правильным способом.</p>
+						<p>Стоимость услуги напрямую зависит от типа изделия:</p>
+						<ul>
+							<li><img src="img/ico/menu-point.png" class="me-2">монтаж горизонтальных и вертикальных жалюзи – 500 руб./шт;</li>
+							<li><img src="img/ico/menu-point.png" class="me-2">монтаж рулонных штор – 500 руб./шт;</li>
+							<li><img src="img/ico/menu-point.png" class="me-2">монтаж жалюзи и рулонных штор с электроприводом – рассчитывается индивидуально;</li>
+							<li><img src="img/ico/menu-point.png" class="me-2">монтаж штор плиссе – 500 руб./шт;</li>
+							<li><img src="img/ico/menu-point.png" class="me-2">монтаж каждого 5-го изделия на одном адресе – БЕСПЛАТНО!</li>
+						</ul>
+						<p class="mb-5">Установка является завершающей стадией, после чего происходит доплата оставшейся суммы (при расчёте наличными или картой), подписывается Акт выполненных работ, а покупатель получает на руки пакет необходимых документов.</p>
+						
+						<h2 class="text-center mb-3">Гарантии</h2>
+						<div class="title-line mb-5"></div>
+						<p>Компания «Унистайл» уверена в качестве реализуемой продукции. Мы не боимся ручаться за долговечность и износоустойчивость своих жалюзи и рулонных штор. Все изделия, изготовленные на нашем предприятии, имеют 2 года гарантии, что превышает стандартные предложения большинства конкурентов. Гарантийный талон выдаётся сразу после монтажа системы и хранится у покупателя.</p>
+						<p class="mb-0">Мы с радостью придём на помощь, если у вас возникнут трудности с механизмом управления, потребуется заменить повреждённые ламели или тканевое полотно светофильтра. Все ремонтные работы производятся на территории заказчика. Вам остаётся только оставить заказ и оговорить удобное время для приёма нашего мастера. Остальное мы берём на себя!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Actions -->
+		
+		
+		<!-- What we will do --
+		<section class="advantages bg-white py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center mb-3">Преимущества работы с нами</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row">
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-1.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Свое производство</h3>
+										<p class="mb-0">Работайте напрямую с производителем без переплаты посредникам.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-2.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Европейское качество</h3>
+										<p class="mb-0">Все ткани имеют сертификаты качества и экологической безопасности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-3.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Европейское качество</h3>
+										<p class="mb-0">Все ткани имеют сертификаты качества и экологической безопасности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-4.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Европейское качество</h3>
+										<p class="mb-0">Все ткани имеют сертификаты качества и экологической безопасности.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-5.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Честные цены</h3>
+										<p class="mb-0">Благодаря собственному производству предлагаем честные цены на продукцию.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-6.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Удобная оплата</h3>
+										<ul class="mb-0 text-orange">
+											<li><img src="img/ico/menu-point.png" class="me-2">Банковской картой (по банковскому терминалу)</li>
+											<li><img src="img/ico/menu-point.png" class="me-2">Наличными </li>
+											<li><img src="img/ico/menu-point.png" class="me-2">Онлайн</li>
+											<li><img src="img/ico/menu-point.png" class="me-2">Безналичный расчет</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-5 mb-md-0">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-7.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Большой выбор готовой продукции и материалов</h3>
+										<p class="mb-0">Более 35 видов жалюзи и штор, а также выбор из более чем 1600 материалов, безопасных для здоровья взрослых и детей.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mb-0">
+								<div class="row">
+									<div class="col-2 text-center">
+										<img src="img/ico/advantage-8.png" class="img-fluid">
+									</div>
+									<div class="col-10">
+										<h3>Мобильный офис</h3>
+										<p class="mb-0">Замер с каталогами в Санкт-Петербурге и Лен. области, без выходных с 9:00 до 21:00.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /What we will do -->
+		
+		
+		<!-- Order --
+		<section class="bg-light order-section">
+			<div class="container">
+				<div class="row">
+					<div class="d-none d-md-block col-md-6" style="position: relative;">
+						<img src="img/ico/men.png">
+					</div>
+					<div class="col-md-6">
+						<h2 class="mb-3">Здравствуйте! Хотите, мы свяжемся с вами в ближайшее время и все подробно расскажем?</h2>
+						<form method="post" action="">
+							<div class="row">
+								<div class="col-md-4">
+									<label for="exampleFormControlInput1" class="form-label">Ваше имя</label>
+									<input type="text" class="form-control" id="exampleFormControlInput1">
+								</div>
+								<div class="col-md-4">
+									<label for="exampleFormControlInput2" class="form-label">Ваш телефон</label>
+									<input type="text" class="form-control" id="exampleFormControlInput2">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<button type="button" class="btn btn-orange mt-3">Хорошо, жду звонка</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Order -->
+		
+		
+		<!-- Contacts -->
+		<div id="contacts-scroll-point" class="scroll-point"></div>
+		<section class="contacts-section">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col">
+						<h2 class="text-center text-light mb-3">Контакты</h2>
+						<div class="title-line mb-5"></div>
+						<div class="row justify-content-center">
+							<div class="col-md-5 col-lg-3">
+								<ul>
+									<li class="mb-3"><img src="img/ico/logo-light.png"></li>
+									<li class="mb-3"><img src="img/ico/location.png" class="ms-1 me-2">Санкт-Петербург</li>
+									<li class="mb-3"><img src="img/ico/clock-ico.png" class="me-2 ">Ежедневно: с 9:00 до 20:00</li>
+									<li><a href="#" class="text-light text-decoration-none"><img src="img/ico/telephone-ico.png" class="me-2">8 (911) 236-51-02</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 col-lg-3">
+								<ul>
+									<li><a href="#" class="text-light text-decoration-none">Главная</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Каталог</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Акции</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Цены</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-md-3 col-lg-3">
+								<ul>
+									<li><a href="#" class="text-light text-decoration-none">Материалы</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Доставка и монтаж</a></li>
+									<li><a href="#" class="text-light text-decoration-none">О компании</a></li>
+									<li><a href="#" class="text-light text-decoration-none">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row justify-content-center text-center">
+							<div class="col-md-4 col-lg-2">
+								<button type="button" class="btn btn-orange mt-3 w-100 ps-1 pe-1" data-bs-toggle="modal" data-bs-target="#measurerModal">Вызвать замерщика</button>
+							</div>
+							<div class="col-md-4 col-lg-2">
+								<button type="button" class="btn btn-orange mt-3 w-100" data-bs-toggle="modal" data-bs-target="#callbackModal">Обратный звонок</button>
+							</div>
+							<div class="col-md-4 col-lg-2">
+								<button type="button" class="btn btn-orange mt-3 w-100" data-bs-toggle="modal" data-bs-target="#messageModal">Задать вопрос</button>
+							</div>
+						</div>
+						<div class="row justify-content-center text-center">
+							<div class="col pt-4">
+								<a class="ico-button pe-2" href="#"><img src="img/ico/whatsapp-ico.png"></a>
+								<a class="ico-button pe-2" href="#"><img src="img/ico/telegram-ico.png"></a>
+								<a class="ico-button pe-2" href="#"><img src="img/ico/inst-ico.png"></a>
+								<a class="ico-button" href="#"><img src="img/ico/vk-ico.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div id="company-in-footer">©2022 Унистайл</div>
+							<div id="im-in-footer">Создание и продвижение сайтов: <a href="https://сайт100.рф" class="text-light">сайт100.рф</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<!-- /Contacts -->
+		
+		
+		<!-- Callback Modal -->
+		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="callbackModalLabel">Обратный звонок</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3 mb-md-0">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Перезвонить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Callback Modal -->
+		
+		
+		<!-- Measurer Modal -->
+		<div class="modal fade" id="measurerModal" tabindex="-1" aria-labelledby="measurerModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="measurerModalLabel">Вызов замерщика</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон">
+							</div>
+							<div class="col-12 mb-3">
+								<input type="text" name="tel" class="form-control" placeholder="Адрес объекта">
+							</div>
+							<div class="col-12">
+								<textarea type="text" name="mes" class="form-control" placeholder="Дополнительная информация"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Вызвать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Measurer Modall -->
+		
+		
+		<!-- Message Modal -->
+		<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<form method="post" action="callback-mail.php" class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="messageModalLabel">Задать вопрос</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Ваше имя">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" name="tel" class="form-control telMask" placeholder="Ваш телефон">
+							</div>
+							<div class="col-12 mb-3">
+								<input type="text" name="adress" class="form-control" placeholder="Адрес объекта">
+							</div>
+							<div class="col-12">
+								<textarea type="text" name="mes" class="form-control" placeholder="Дополнительная информация"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-orange mx-auto">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /Message Modal -->
+		
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		-->
+		
+		<!-- Main scripts -->
+		<script src="scripts/scripts.js"></script>
+		
+		<!-- Telephone number mask -->
+		<script src="scripts/inputmask.min.js"></script>
+		<script>
+			var telMask = document.getElementsByClassName("telMask");
+			var im = new Inputmask("+7(999)999-99-99");
+			im.mask(telMask);
+		</script>
+	</body>
+</html>
